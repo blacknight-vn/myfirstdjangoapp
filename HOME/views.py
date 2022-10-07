@@ -10,5 +10,5 @@ class VisaViewSet(viewsets.ModelViewSet):
     serializer_class = VisaSerializer
 
 def index(request):
-    return  HttpResponse('Hello')
-    return render(request, 'index.html')
+    # return  HttpResponse('Hello')
+    return render(request, 'home/index.html')
