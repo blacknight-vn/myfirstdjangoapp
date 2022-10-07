@@ -7,3 +7,6 @@ from rest_framework import viewsets
 class VisaViewSet(viewsets.ModelViewSet):
     queryset = Visa.objects.all()
     serializer_class = VisaSerializer
+
+def index(request):
+    return render(request, 'index.html')

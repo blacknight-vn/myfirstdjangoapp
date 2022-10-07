@@ -7,4 +7,5 @@ router.register(r'visa', views.VisaViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('home', views.index),
 ]
